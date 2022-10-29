@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from db import get
 
 app = FastAPI()
 
@@ -8,3 +9,7 @@ app = FastAPI()
 @app.get("/")
 def home():
     return {"message":"Hello world"}
+
+app.get("/get_data")
+def get_path():
+    return get()
