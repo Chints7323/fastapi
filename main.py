@@ -12,4 +12,4 @@ def home():
 
 app.get("/get_data")
 def get_path():
-    return get()
+    return {"message":"route"}
